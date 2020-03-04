@@ -1,0 +1,10 @@
+<Window 
+                           xmlns:viewModels=""NAMESPACE".ViewModels"
+                           d:DataContext="{d:DesignInstance viewModels:MainViewModel}">
+    <Window.DataContext>
+        <viewModels:MainViewModel x:Name="Base"/>
+    </Window.DataContext>
+    <Grid>
+    <!--Window Content here...-->
+    </Grid>
+</Window>
