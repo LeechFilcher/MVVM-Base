@@ -1,5 +1,9 @@
     internal class MainViewModel : INotifyPropertyChanged
     {
+        private ICommand _command;
+        public ICommand COMMAND =>
+            _command ?? (_command = new CommandHandler.CommandHandler(FUNC, () => true));
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]
